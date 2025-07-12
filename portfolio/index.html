@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gollapalli Sasank - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Gollapalli Sasank</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight"><i>Gollapalli Sasank</i></span></h1>
+                <p>A passionate Web Developer specializing in Front-end Development<br/> and Back-end Development.</p>
+                <a href="#portfolio" class="btn">My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-me">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="D:\intern\task_4\portfolio\public\person.jpeg" alt="Your Photo" class="profile-photo">
+                    <p>
+                        Hello! I'm Gollapalli Sasank, a dedicated and enthusiastic web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy crafting responsive and user-friendly websites. My passion lies in transforming ideas into engaging digital experiences.
+                        <br><br>
+                        I am always eager to learn new technologies and improve my skills. When I'm not coding, you can find me reading, hiking, playing music.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <h3>My Skills</h3>
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">Python</div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-showcase">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://blog.american-time.com/hs-fs/hubfs/clock%20images/Digital_4in_4-digit_red.jpg?width=310&name=Digital_4in_4-digit_red.jpg" alt="Project 1">
+                        <h3>Digital Clock</h3>
+                        <p>It is a simple and interactive webpage that time is displayed in HH:MM:SS format<br/>
+                        Technologies used: HTML5 ,CSS3 ,JS</p>
+                       
+                    </div>
+                    <div class="project-card">
+                        <img src="https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_2624/https%3A%2F%2Fwww.todoist.com%2Fstatic%2Fhome-teams%2Fintro%2Fnarrow%2Fheaderui.en.png" alt="Project 2">
+                        <h3>Todo list</h3>
+                        <p>It is a simple and interactive webpage application that user can add or delete tasks.Where tasks are stored in JS localstorage<br/>
+                        Technologies used: HTML5 ,CSS3 ,JS</p>
+                        
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-me">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <form class="contact-form" action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email : gollapallisasank@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> Phone :+91 9652720263</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
