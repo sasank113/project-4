@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><b>Products</b></h1>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Filter by Category</h3>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Books</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="books">Electronics</option>
+                    <option value="home & kitchen">Home & Kitchen</option>
+                    <option value="sports">Sports</option>
+
+                </select>
+            </div>
+
+            <div class="filter-section">
+                <h3>Filter by Price</h3>
+                <div class="price-range">
+                    <label for="min-price">Min Price:</label>
+                    <input type="number" id="min-price" value="0" min="0">
+                </div>
+                <div class="price-range">
+                    <label for="max-price">Max Price:</label>
+                    <input type="number" id="max-price" value="1000" min="0">
+                </div>
+                <button id="apply-price-filter">Apply Price Filter</button>
+            </div>
+
+            <div class="sort-section">
+                <h3>Sort by Rating</h3>
+                <select id="sort-rating">
+                    <option value="none">No Sort</option>
+                    <option value="high-to-low">High to Low</option>
+                    <option value="low-to-high">Low to High</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="product-list-container">
+            <div id="product-list" class="product-grid">
+                </div>
+            <p id="no-products-message" class="hidden">No products found matching your criteria.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
